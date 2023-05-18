@@ -3,11 +3,11 @@ header {
     width: 100%;
     height: 80px;
     background-color: #fcfafa;
-    text-decoration-color: white;
+    text-decoration-color: #fcfafa;
     z-index: 9999;
   }
   .menu{
-    background-color:white;
+    background-color:#fcfafa;
     width : 100%;
     height : 25%;
   }
