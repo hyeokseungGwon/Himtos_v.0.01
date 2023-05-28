@@ -1,147 +1,115 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Himtos</title>
-    <link rel="stylesheet" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/easygpt/default.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/easygpt/default.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
             crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3f3c939ad7.js" crossorigin="anonymous"></script>
     <link href="Himtos_practice_menu.css" rel="stylesheet">
-    <style>
-        /* hero 영역 고정 */
-        #hero {
-            position: flex;
-            top: 0;
-            width: 50%;
-            z-index: auto;
-        }
-
-        /* main 요소 margin-top 값 조정 */
-        main {
-            margin-top: 50%; /* hero의 높이만큼 지정 */
-        }
-
-        /* 반응형 구현 */
-        @media (max-width: 768px) {
-            #hero {
-                height: 50; /* 높이 조정 */
-            }
-
-            main {
-                margin-top: 300px; /* margin-top 값 조정 */
-            }
-        }
-
-        .card-img-top {
-            height: 200px;
-            object-fit: cover;
-        }
-    </style>
-</head>
-<header>
-  <nav>
-    <a href="http://www.himtos.com">
-      <div class="logo">
-        <img src="Himtos_대문자.png" alt="logo" width="10%" height="10%">
-        <a href="http://www.himtos.com">HIMTOS</a>
-      </div>
+    <script src="Himtos_practice.js" defer></script>
+  <title>HIMTOS</title>
+  <nav class="navbar">
+    <div class="navbar_logo">
+      <img src="Himtos_대문자.png" width="30%" height="30%">
+      <a href="http://www.himtos.com">HIMTOS</a>
 
     </div>
-    <div class="hamburger-menu">
-      <i class="fa fa-bars">
-        <div class="menu">
-          <div class="container">
-          <ul>
-            <li><a href="company.html">Company</a></li>
-            <li><a href="#">Organization</a></li>
-            <li><a href="#">Industry</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="https://www.notion.so/Who-We-Are-833786ddc2c14e39aa960e82bafbec19?pvs=4">Career</a></li>
-          </ul>
-        </div>
-      </i>
-    </div>
+    <ul class="navbar_menu">
+      <li><a href="company.html">Company</a></li>
+      <li><a href="">Organization</a></li>
+      <li><a href="">Industry</a></li>
+      <li><a href="">Contact</a></li>
+      <li><a href="">Career</a></li>
+
+    </ul>
+    <ul class="navbar_icons">
+      <li><i class="fa-solid fa-comments-question"></i></li>
+      <li><i class="fa-sharp fa-solid fa-location-dot"></i></li>
+      <li><i class="fa-solid fa-tty-answer"></i></li>
+    </ul>
+    <a href="#" class="navbar_toogleBtn">
+      <i class="fa-sharp fa-solid fa-bars"></i>
+    </a>
   </nav>
-  <div class="hero-content">
-    <!-- Your hero content goes here -->
+  <div class="bg-dark pb-5">
+    <div class="hero-section bg-dark text-white py-5" width="50%" height="50%">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="Himtos_대문자.png" alt="Himtos_logo" width="50%" height="50%">
+                </div>
+                <div class="col-md-6">
+                    <h1 class="display-4 mb-4">HIMTOS</h1>
+                    <p class="lead">최고의 AI기술로 당신과 함께 합니다!</p>
+                </div>
+            </div>
+        </div>
+    </div>
   </div>
-</header>
-<div class="bg-dark pb-5">
-  <div class="hero-section bg-dark text-white py-5" width="50%" height="50%">
-      <div class="container">
-          <div class="row align-items-center">
-              <div class="col-md-6">
-                  <img src="Himtos_대문자.png" alt="Himtos_logo" width="50%" height="50%">
-              </div>
-              <div class="col-md-6">
-                  <h1 class="display-4 mb-4">HIMTOS</h1>
-                  <p class="lead">최고의 AI기술로 당신과 함께 합니다!</p>
-              </div>
-          </div>
-      </div>
-  </div>
-</div>
+</head>
 <body>
-<div class ="background">
+  <div class ="background">
+    <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="인테리어 이미지.jpg" class="card-img-top" alt="빅데이터 활용 인테리어">
+          <div class="card-body">
+            <h5 class="card-title">빅데이터활용 인테리어</h5>
+            <p class="card-text">고객의 니즈에 맞추어 가장 효율적인 동선을 고려한 디자인을 고객맞춤형으로 제공됩니다.</p>
+            <a href="#" class="btn btn-primary">자세히 알아보기</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="물류_image.png" class="card-img-top" alt="빅데이터 활용 물류">
+          <div class="card-body">
+            <h5 class="card-title">빅데이터활용 물류</h5>
+            <p class="card-text">빅데이터 기반의 분석과 동선으로 가장 빠른 배송을 도와드리겠습니다.</p>
+            <a href="#" class="btn btn-primary">자세히 알아보기</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <img src="마케팅_이미지.jpg" class="card-img-top" alt="마케팅 이미지">
+            <h5 class="card-title">빅데이터 기반 마케팅</h5>
+            <p class="card-text">고객에게 다가가는 첫걸음 빅데이터 기반의 분석으로 고객님의 이윤을 극대화 하겠습니다.</p>
+            <a href="#" class="btn btn-primary">자세히 알아보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="container">
-  <div class="row">
+    <div class = "row"></div>
     <div class="col-md-4">
-      <div class="card">
-        <img src="인테리어 이미지.jpg" class="card-img-top" alt="빅데이터 활용 인테리어">
-        <div class="card-body">
-          <h5 class="card-title">빅데이터활용 인테리어</h5>
-          <p class="card-text">고객의 니즈에 맞추어 가장 효율적인 동선을 고려한 디자인을 고객맞춤형으로 제공됩니다.</p>
-          <a href="#" class="btn btn-primary">자세히 알아보기</a>
-        </div>
+      <div class = "location">
+        <h5>Location</h5>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <img src="물류_image.png" class="card-img-top" alt="빅데이터 활용 물류">
-        <div class="card-body">
-          <h5 class="card-title">빅데이터활용 물류</h5>
-          <p class="card-text">빅데이터 기반의 분석과 동선으로 가장 빠른 배송을 도와드리겠습니다.</p>
-          <a href="#" class="btn btn-primary">자세히 알아보기</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-body">
-          <img src="마케팅_이미지.jpg" class="card-img-top" alt="마케팅 이미지">
-          <h5 class="card-title">빅데이터 기반 마케팅</h5>
-          <p class="card-text">고객에게 다가가는 첫걸음 빅데이터 기반의 분석으로 고객님의 이윤을 극대화 하겠습니다.</p>
-          <a href="#" class="btn btn-primary">자세히 알아보기</a>
-        </div>
-      </div>
+  
     </div>
   </div>
-</div>
-<div class="container">
-  <div class = "row"></div>
-  <div class="col-md-4">
-    <div class = "location">
-      <h5>Location</h5>
-    </div>
-
+  <div class="container">
+    <div class = "row"></div>
+    <div class="col-md-5">
+    <h3>사업문의</h5>
+    <h3>☎ 010-5807-4702</h3>
+    <h2>E-mail) kkjjll18@naver.com</h2>
+    <a href="#" class="btn btn-primary">문의하기</a></div>
+  
+  
   </div>
-</div>
-<div class="container">
-  <div class = "row"></div>
-  <div class="col-md-5">
-  <h3>사업문의</h5>
-  <h3>☎ 010-5807-4702</h3>
-  <h2>E-mail) kkjjll18@naver.com</h2>
-  <a href="#" class="btn btn-primary">문의하기</a></div>
-
-
-</div>
-</section>    
-</div>  
+  </section>    
+  </div>   
+  
 </body>
-
 </html>
